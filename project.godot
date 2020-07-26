@@ -1,0 +1,47 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Reference",
+"class": "PeerEventPeerFound",
+"language": "GDScript",
+"path": "res://lib/Godot-Peer-Finder/CustomEvents/PeerEventPeerFound.gd"
+}, {
+"base": "Reference",
+"class": "PeerEventPeerLost",
+"language": "GDScript",
+"path": "res://lib/Godot-Peer-Finder/CustomEvents/PeerEventPeerLostEvent.gd"
+} ]
+_global_script_class_icons={
+"PeerEventPeerFound": "",
+"PeerEventPeerLost": ""
+}
+
+[application]
+
+config/name="Godot-Peer-Finder-Demo"
+run/main_scene="res://Nodes/Main/Main.tscn"
+config/icon="res://media/AppIcons-iOS-assets/Icon-App-60x60@2x.png"
+config/macos_native_icon="res://media/AppIcons-iOS-assets/Icon-App-60x60@2x.png"
+config/windows_native_icon="res://media/AppIcons-iOS-assets/Icon-App-60x60@2x.png"
+
+[autoload]
+
+PeerFinder="*res://lib/Godot-Peer-Finder/PeerFinder.gd"
+
+[display]
+
+window/size/width=992
+window/size/height=542
+window/handheld/orientation="sensor"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

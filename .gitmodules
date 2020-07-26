@@ -1,0 +1,3 @@
+[submodule "lib/Godot-Peer-Finder"]
+	path = lib/Godot-Peer-Finder
+	url = git@github.com:frklan/Godot-Peer-Finder.git
